@@ -3,8 +3,14 @@ export default {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      textShadow:{
+        'sm':' 4px 4px 10px rgba(0, 0, 0, 1)'
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 }
 
