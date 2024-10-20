@@ -6,6 +6,8 @@ import { Header } from "./Header"
 import { NavBar } from "./NavBar"
 
 import {register} from 'swiper/element/bundle'
+import { Categorys } from "./Categorys";
+import { Footer } from "./Footer";
 register()
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <NavBar cardVisibilit={cardVisibilit}></NavBar>
       <Header></Header>
       <Apresentacao></Apresentacao>
+      <Categorys></Categorys>
+      <Footer></Footer>
     </div>
   )
 }
