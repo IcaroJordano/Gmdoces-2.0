@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { CardCategory } from "./CardCategory";
+// import { CardCategory } from "./CardCategory";
 
 export function Categorys() {
     return (
