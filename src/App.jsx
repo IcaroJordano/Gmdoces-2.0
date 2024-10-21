@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 import { useState } from "react";
 
-import { Apresentacao } from "./Apresentacao"
-import { CardPreview } from "./CardPreview"
-import { Header } from "./Header"
-import { NavBar } from "./NavBar"
-import { Footer } from "./Footer";
-import { Categorys } from "./Categorys";
+import { Apresentacao } from "./Components/Apresentacao"
+import { CardPreview } from "./Components/CardPreview"
+import { Header } from "./Components/Header"
+import { NavBar } from "./Components/NavBar"
+import { Footer } from "./Components/Footer";
+import { Categorys } from "./Components/Categorys";
 
 import { register } from 'swiper/element/bundle'
 import { Home } from "./Pages/Home";

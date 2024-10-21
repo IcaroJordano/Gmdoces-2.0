@@ -1,5 +1,5 @@
-import { Categorys } from "../Categorys";
-import { Apresentacao } from "../Apresentacao"
+import { Categorys } from "../Components/Categorys";
+import { Apresentacao } from "../Components/Apresentacao"
  
 export function Home() {
     return (
