@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/pagination';
 
+import { Link } from "react-router-dom";
 
 
 export function Produto() {
@@ -17,7 +18,7 @@ export function Produto() {
             <form action="" className='  w-10/12 mx-auto'>
                 <label className='text-2xl font-semibold w-1/3' htmlFor="Quantidade">Quantidade:</label>
                 <input className='border-2 border-gray-400 p-3 text-2xl w-1/4 h-14 mx-2 text-black' type="number" name="Quantidade" placeholder='1' id="Quantidade" />
-                <input className='w-full h-14 rounded-md bg-green-300/80 text-xl my-3 ' type="submit" value="Add ao Pedido" />
+                <Link to={'/pedido'} ><input className='w-full h-14 rounded-md bg-green-300/70 text-xl my-5 ' type="submit" value="Add ao Pedido" /></Link>
             </form>
             <h6 className='w-10/12 mx-auto text-xl mt-14 font-extrabold'>Detalhes do produto</h6>
             <p className='w-10/12 mx-auto text-xl mb-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quasi animi odio deleniti, obcaecati dolorem id eum. Doloribus modi repellendus maxime nobis. Iste hic quaerat laboriosam repudiandae accusantium natus iusto.</p>
