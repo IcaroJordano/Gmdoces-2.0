@@ -1,11 +1,23 @@
+import { useEffect, useState } from "react";
 import { FaX } from "react-icons/fa6";
 
 export function CardPedido() {
+    const [imagem,setImagem]=useState("")
+    useEffect(()=>{
+        console.log()
+        if(localStorage.getItem("Pedido")!==null){
+            setImagem((JSON.parse(localStorage.getItem("Pedido")))[0])
+        }
+        else{
+            console.log('nao esta no local store')
+        }
+        // setImagem(imagem)
+    },[])
     return (
-        <div className=" py-10 w-10/12 mx-auto border border-transparent border-b-gray-400/50 flex flex-row">
-            <img className="w-16 mr-5 h-16" src="" alt="" />
-            <div className="w-4/5 flex flex-wrap">
-                <h4 className="text-xl">Birthday Cake</h4>
+        <div className=" py-10 w-11/12 mx-auto border border-transparent border-b-gray-400/50 flex flex-row">
+            <img className="w-16 m-5 bg-red-500 object-cover h-16" src={imagem['image']} alt="" />
+            <div className="w-3/5 flex flex-wrap">
+                <h4 className="text-xl overflow-hidden">{imagem['nome']}</h4>
                 <p className="text-xl text-gray-500/70 font-semibold my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, amet! Amet hic ipsum necessitatibus, error eos quidem doloribus quasi rem quisquam aut quae culpa, nihil adipisci dolores, vitae officiis distinctio.</p>
                 <form action="" className="text-rose-400 text-2xl flex justify-center items-center">
                     <label htmlFor="quantidade">Qtdd:</label>
@@ -22,9 +34,9 @@ export function CardPedido() {
                         <option value="10">10</option>
                     </select>
                 </form>
-                <p className="text-2xl mx-auto">R$ 12.50</p>
+                <p className="text-2xl mx-auto">R${((JSON.parse(localStorage.getItem("Pedido")))[0]['preco'])}.00</p>
             </div>
-            <FaX></FaX>
+            <FaX className="text-2xl text-gray-500 "></FaX>
         </div>
     )
 }
