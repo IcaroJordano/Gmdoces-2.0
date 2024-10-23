@@ -9,7 +9,7 @@ import { NavBar } from "./Components/NavBar"
 import { Footer } from "./Components/Footer";
 
 import { register } from 'swiper/element/bundle'
-import { Rotas } from "./Rotas";
+import { Rotas } from "./Components/Rotas";
 register()
 
 function App() {

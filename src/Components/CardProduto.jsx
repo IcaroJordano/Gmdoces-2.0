@@ -1,4 +1,3 @@
-
 export function CardProduto({image}) {
     return (
         <div className="w-44 my-5 pb-2 rounded-lg shadow-neutral-800/30 shadow-md  ">
