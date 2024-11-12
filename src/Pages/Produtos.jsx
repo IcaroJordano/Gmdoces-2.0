@@ -5,7 +5,7 @@ import { CardProduto } from "../Components/CardProduto";
 export function Produtos() {
     return(
         <section className="pb-10 lg:pl-10 lg:pt-40" >
-            <h2 className="mx-auto w-11/12 lg:w-7/12 lg:my-0  text-center text-xl font-serif underline  font-semibold leading-8 lg:text-lg my-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut natus asperiores beatae harum sed saepe nemo est modi nam ex autem, debitis vero consequuntur rerum fugiat doloribus adipisci, perferendis perspiciatis?</h2>
+            <h2 className="mx-auto w-11/12 lg:w-7/12 lg:my-0  text-center text-xl font-serif underline  font-semibold leading-8 lg:text-lg my-10">Pedidos exigem um mínimo de 48 horas de antecedência, no entanto, muitas vezes reservamos dias a semanas de antecedência. As opções de entrega estão disponíveis por um custo adicional em encomendas superiores a $34.95!</h2>
             <h3 className="ml-3 text-3xl font-serif font-semibold">Category</h3>
             <div className=" w-full mx-auto flex justify-around font-serif text-center flex-wrap">
                 <Link className="lg:w-1/3 " to={'/produto'} state={{imagem:'https://d2j6dbq0eux0bg.cloudfront.net/images/26817093/4512405671.png',preco:10,nome:'bolo1'}} ><CardProduto nome={'bolo1'} preco={10} image={'https://d2j6dbq0eux0bg.cloudfront.net/images/26817093/4512405671.png'} ></CardProduto></Link> 

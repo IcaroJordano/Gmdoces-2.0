@@ -13,7 +13,7 @@ export function Apresentacao() {
     )
     return (
         <section className="lg:h-fit h-96 mt-20 lg:my-0 lg:pt-36 my-10" >
-            <Swiper className='h-full'  navigation={width>1023}    pagination={{ clickable: true }} spaceBetween={5}  slidesPerView={1}>
+            <Swiper className='h-full'  navigation={width>1023}    pagination={{ clickable: true }} spaceBetween={0}  slidesPerView={1}>
                 <SwiperSlide className='lg:h-screen    bg-[url("https://static.wixstatic.com/media/e8274b_cf029b6e89834adca433b159353aaec7~mv2.jpg/v1/fill/w_1080,h_598,al_c,q_85,enc_auto/e8274b_cf029b6e89834adca433b159353aaec7~mv2.jpg")] bg-cover flex flex-col items-center' >
                     <h2 className=' text-shadow-sm w-10/12  lg:w-8/12 text-4xl lg:text-7xl font-mono mt-12 lg:mt-40 lg:  mb-10 text-center text-neutral-100 font-bold'>Conheca nossos items de datas comemorativas</h2>
                     <Link className='px-10 py-3 text-xl  bg-white rounded-full' to='/explorar' >Ver agora</Link>

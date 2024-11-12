@@ -16,7 +16,7 @@ export function Produto() {
     }
     return (
         <section className='font-serif lg:pt-36'>
-            <h2 className="mx-auto w-11/12 lg:w-7/12 lg:my-10 lg:text-lg text-center text-xl underline font-semibold leading-8  my-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut natus asperiores beatae harum sed saepe nemo est modi nam ex autem, debitis vero consequuntur rerum fugiat doloribus adipisci, perferendis perspiciatis?</h2>
+            <h2 className="mx-auto w-11/12 lg:w-7/12 lg:my-10 lg:text-lg text-center text-xl underline font-semibold leading-8  my-10">Pedidos exigem um mínimo de 48 horas de antecedência, no entanto, muitas vezes reservamos dias a semanas de antecedência. As opções de entrega estão disponíveis por um custo adicional em encomendas superiores a $34.95!</h2>
             <h3 className='text-2xl w-10/12 my-5 font-medium mx-auto text-gray-500'>Category /Produto</h3>
             <div className='lg:flex  w-full'>
                 <Swiper className='lg:w-1/2 lg:mx-40 lg:p-0  w-10/12 pb-10' slidesPerView={1} pagination={{ clickable: true }}>
